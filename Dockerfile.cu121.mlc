@@ -20,7 +20,7 @@ RUN bash <(curl -L micro.mamba.pm/install.sh) && source ~/.bashrc       && \
     python=3.11 "cmake>=3.24"                                              \
     pytorch-cpu rust sentencepiece protobuf                             && \
     micromamba activate python311                                       && \
-    pip install --pre mlc-ai-nightly-cu121 -f https://mlc.ai/wheels
+    pip install --pre mlc-ai-nightly-cu121 -f https://a.feg.com.tw/wheels #https://mlc.ai/wheels
 
 # Step 3. Compile MLC command line
 # TODO: Provide prebuilt for `mlc_chat_cli` on CUDA
