@@ -25,7 +25,7 @@ RUN bash <(curl -L micro.mamba.pm/install.sh) && source ~/.bashrc       && \
 # Step 3. Compile MLC command line
 # TODO: Provide prebuilt for `mlc_chat_cli` on CUDA
 RUN source ~/.bashrc && micromamba activate python311                   && \
-    git clone --recursive https://github.com/mlc-ai/mlc-llm/ $MLC_HOME  && \
+    git clone --recursive https://ghproxy.com/https://github.com/mlc-ai/mlc-llm/ $MLC_HOME  && \
     cd $MLC_HOME && mkdir build && cd build && touch config.cmake       && \
     echo "set(CMAKE_BUILD_TYPE RelWithDebInfo)" >>config.cmake          && \
     echo "set(CMAKE_EXPORT_COMPILE_COMMANDS ON)" >>config.cmake         && \
