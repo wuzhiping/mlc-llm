@@ -1,3 +1,8 @@
+<pre>
+  docker build -t shawoo/mlc-llm -f Dockerfile.cu121.mlc .
+</pre>
+
+
 LLM Performance Benchmarking
 ----------------------------
 
