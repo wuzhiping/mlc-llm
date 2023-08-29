@@ -2,9 +2,10 @@
 # https://webllm.mlc.ai/
 # https://mlc.ai/package/
 <pre>
-  docker build -t shawoo/mlc-llm -f Dockerfile.cu121.mlc .
+  docker build -t shawoo/mlc-llm .
 </pre>
 <pre>
+  魔法
   https://mlc.ai/wheels
 </pre>
 
